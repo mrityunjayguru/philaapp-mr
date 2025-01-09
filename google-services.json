@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "243855296988",
+    "project_id": "citysignseeing",
+    "storage_bucket": "citysignseeing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243855296988:android:c3e0c420f4242514a86719",
+        "android_client_info": {
+          "package_name": "com.citysightseeingphila.citySightseeingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243855296988-b1cbl55pregsmt5sg39el7eu418v4lrj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt-ZrE9pqkLjUJyOndl6jcJ5Agsd6EK7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243855296988-b1cbl55pregsmt5sg39el7eu418v4lrj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "243855296988-vpmp2d6b9eos4updob3m7pp4g2r9r7pd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.citysightseeingphila.citySightseeingapp",
+                "app_store_id": "1638327481"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
