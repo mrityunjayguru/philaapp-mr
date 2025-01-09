@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="234 122.95 30 30">
+    <g data-name="Group 566">
+        <g data-name="Ellipse 19">
+            <path d="M234 137.9a15 15 0 1 1 0 .1z" fill="#fff" fill-rule="evenodd" />
+            <path d="M235 137.903a14 14 0 1 1 0 .094z" stroke-linejoin="round"
+                stroke-linecap="round" stroke-width="1.86666" stroke="#4169E1" fill="transparent" />
+        </g>
+        <g data-name="Group 537">
+            <g data-name="Group 536" transform="translate(241 130)" clip-path="url(&quot;#a&quot;)">
+                <path
+                    d="M9.235.434v.001a.479.479 0 0 0-.537.06l-4.94 4.24H1.397A1.056 1.056 0 0 0 .38 5.825v4.352a1.056 1.056 0 0 0 1.016 1.088h2.36l4.94 4.236a.492.492 0 0 0 .538.06.55.55 0 0 0 .288-.487V.926a.551.551 0 0 0-.288-.492M3.43 10.177H1.397V5.824h2.032v4.353Zm5.078 3.765-4.062-3.483V5.545l4.062-3.487v11.884Z"
+                    fill="#4169E1" fill-rule="evenodd" data-name="Path 749" />
+                <path
+                    d="M12.096 4.143v.008a.484.484 0 0 0-.718 0 .572.572 0 0 0 0 .769 4.571 4.571 0 0 1 0 6.15.572.572 0 0 0 0 .769.485.485 0 0 0 .718 0 5.714 5.714 0 0 0 0-7.696"
+                    fill="#4169E1" fill-rule="evenodd" data-name="Path 750" />
+                <path
+                    d="M13.528 2.618a.485.485 0 0 0-.718 0 .572.572 0 0 0 0 .77 6.83 6.83 0 0 1 0 9.218.572.572 0 0 0 0 .769.485.485 0 0 0 .718 0 7.973 7.973 0 0 0 0-10.765v.008Z"
+                    fill="#4169E1" fill-rule="evenodd" data-name="Path 751" />
+            </g>
+        </g>
+    </g>
+    <defs>
+        <clipPath id="a">
+            <path d="M0 0h16v16H0V0z" data-name="Rectangle 282" />
+        </clipPath>
+    </defs>
+</svg>
