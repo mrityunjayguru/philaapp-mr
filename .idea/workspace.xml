@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f750cdbc-ae45-4367-bcc4-27ac309f9bdc" name="Changes" comment="version code">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screen/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screen/splash_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/service/firebase_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/service/firebase_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="NO_FF" />
+      </set>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;neerajabuch&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/codefencers-git/Bus-Tracking-App.git&quot;,
+    &quot;accountId&quot;: &quot;54fea300-876a-4904-8c07-97ac985bc999&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2j5r3FWLzNcn0bbtlVfiSRMUon3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Flutter.main.dart.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "audio__module",
+    "io.flutter.reload.alreadyRun": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/neeraja/Bus-Tracking-App/lib/service",
+    "settings.editor.selected.configurable": "flutter.settings",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\neeraja\Bus-Tracking-App\lib\service" />
+      <recent name="D:\neeraja\Bus-Tracking-App\assets\images" />
+      <recent name="D:\neeraja\Bus-Tracking-App\assets\images\overview" />
+      <recent name="C:\Users\dell\Lucky\Bus-Tracking-App" />
+      <recent name="C:\Users\dell\Lucky\Bus-Tracking-App\lib\pages\sidebar_pages" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f750cdbc-ae45-4367-bcc4-27ac309f9bdc" name="Changes" comment="" />
+      <created>1720687578028</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720687578028</updated>
+    </task>
+    <task id="LOCAL-00008" summary="message change in model">
+      <option name="closed" value="true" />
+      <created>1720788252484</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720788252484</updated>
+    </task>
+    <task id="LOCAL-00009" summary="message change in model">
+      <option name="closed" value="true" />
+      <created>1720792284942</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720792284942</updated>
+    </task>
+    <task id="LOCAL-00010" summary="sample audio api, change in routing">
+      <option name="closed" value="true" />
+      <created>1721041064223</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721041064223</updated>
+    </task>
+    <task id="LOCAL-00011" summary="download sample audio using dio, set prev and next pages">
+      <option name="closed" value="true" />
+      <created>1721113587277</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721113587277</updated>
+    </task>
+    <task id="LOCAL-00012" summary="git ignore file">
+      <option name="closed" value="true" />
+      <created>1721114123049</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721114123049</updated>
+    </task>
+    <task id="LOCAL-00013" summary="downloaded module">
+      <option name="closed" value="true" />
+      <created>1721208451376</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721208451376</updated>
+    </task>
+    <task id="LOCAL-00014" summary="git pull">
+      <option name="closed" value="true" />
+      <created>1721209508809</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721209508809</updated>
+    </task>
+    <task id="LOCAL-00015" summary="routing change">
+      <option name="closed" value="true" />
+      <created>1721217869047</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1721217869047</updated>
+    </task>
+    <task id="LOCAL-00016" summary="routing change, loader, description and title">
+      <option name="closed" value="true" />
+      <created>1721219530912</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1721219530912</updated>
+    </task>
+    <task id="LOCAL-00017" summary="routing change">
+      <option name="closed" value="true" />
+      <created>1721220853170</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1721220853170</updated>
+    </task>
+    <task id="LOCAL-00018" summary="release audio player">
+      <option name="closed" value="true" />
+      <created>1721222985039</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1721222985039</updated>
+    </task>
+    <task id="LOCAL-00019" summary="minor ui bug fix, stop audio in main screen, device location enabled">
+      <option name="closed" value="true" />
+      <created>1721304823457</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1721304823467</updated>
+    </task>
+    <task id="LOCAL-00020" summary="audio state change">
+      <option name="closed" value="true" />
+      <created>1721313090272</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1721313090272</updated>
+    </task>
+    <task id="LOCAL-00021" summary="set trigger point on basis of show_icon">
+      <option name="closed" value="true" />
+      <created>1721711177873</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1721711177873</updated>
+    </task>
+    <task id="LOCAL-00022" summary="set trigger point on basis of show_icon, language list api">
+      <option name="closed" value="true" />
+      <created>1721733506366</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1721733506366</updated>
+    </task>
+    <task id="LOCAL-00023" summary="polyline in map, scrollable description text">
+      <option name="closed" value="true" />
+      <created>1721818778028</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1721818778028</updated>
+    </task>
+    <task id="LOCAL-00024" summary="markers for lat long in audio map">
+      <option name="closed" value="true" />
+      <created>1721828832492</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1721828832492</updated>
+    </task>
+    <task id="LOCAL-00025" summary="change in markers- audio">
+      <option name="closed" value="true" />
+      <created>1722251529360</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1722251529360</updated>
+    </task>
+    <task id="LOCAL-00026" summary="audio player plugin updated, permission handling for ios">
+      <option name="closed" value="true" />
+      <created>1722416441421</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1722416441421</updated>
+    </task>
+    <task id="LOCAL-00027" summary="set state of audio player">
+      <option name="closed" value="true" />
+      <created>1722420257083</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1722420257083</updated>
+    </task>
+    <task id="LOCAL-00028" summary="storage permission for ios">
+      <option name="closed" value="true" />
+      <created>1722420892285</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1722420892285</updated>
+    </task>
+    <task id="LOCAL-00029" summary="storage permission for ios">
+      <option name="closed" value="true" />
+      <created>1722423105186</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1722423105186</updated>
+    </task>
+    <task id="LOCAL-00030" summary="proxy provider for audio service">
+      <option name="closed" value="true" />
+      <created>1722494172163</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1722494172163</updated>
+    </task>
+    <task id="LOCAL-00031" summary="increase button height- play audio screen , change app ar text color - map">
+      <option name="closed" value="true" />
+      <created>1722496348790</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1722496348790</updated>
+    </task>
+    <task id="LOCAL-00032" summary="increase button height- play audio screen , change app ar text color - map">
+      <option name="closed" value="true" />
+      <created>1722501161695</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1722501161695</updated>
+    </task>
+    <task id="LOCAL-00033" summary="audio api language parameter change">
+      <option name="closed" value="true" />
+      <created>1722513859264</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1722513859264</updated>
+    </task>
+    <task id="LOCAL-00034" summary="ios - download file path updated">
+      <option name="closed" value="true" />
+      <created>1722516670248</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1722516670248</updated>
+    </task>
+    <task id="LOCAL-00035" summary="app bar icon height change- image view screen">
+      <option name="closed" value="true" />
+      <created>1722517043366</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1722517043366</updated>
+    </task>
+    <task id="LOCAL-00036" summary="app bar icon height change- image view screen">
+      <option name="closed" value="true" />
+      <created>1722517126141</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1722517126141</updated>
+    </task>
+    <task id="LOCAL-00037" summary="language list ui change, data in custom img api">
+      <option name="closed" value="true" />
+      <created>1722595803436</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1722595803436</updated>
+    </task>
+    <task id="LOCAL-00038" summary="bus title bug solve">
+      <option name="closed" value="true" />
+      <created>1722920417227</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1722920417227</updated>
+    </task>
+    <task id="LOCAL-00039" summary="check proximity for audio">
+      <option name="closed" value="true" />
+      <created>1722947522884</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1722947522884</updated>
+    </task>
+    <task id="LOCAL-00040" summary="check proximity for audio">
+      <option name="closed" value="true" />
+      <created>1722951185405</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1722951185405</updated>
+    </task>
+    <task id="LOCAL-00041" summary="check proximity for audio, autoplay audio, user cannot manually start audio, location access in home screen , bus list api integration, check vehicle proximity">
+      <option name="closed" value="true" />
+      <created>1723026111222</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1723026111224</updated>
+    </task>
+    <task id="LOCAL-00042" summary="zoom camera when marke selected, marker color bug">
+      <option name="closed" value="true" />
+      <created>1723034954842</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1723034954842</updated>
+    </task>
+    <task id="LOCAL-00043" summary="loader in main screen for audio">
+      <option name="closed" value="true" />
+      <created>1723035930743</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1723035930743</updated>
+    </task>
+    <task id="LOCAL-00044" summary="loader in main screen for audio">
+      <option name="closed" value="true" />
+      <created>1723035946035</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1723035946035</updated>
+    </task>
+    <task id="LOCAL-00045" summary="check proximity and audio autoplay">
+      <option name="closed" value="true" />
+      <created>1723452731876</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1723452731876</updated>
+    </task>
+    <task id="LOCAL-00046" summary="check proximity and audio autoplay">
+      <option name="closed" value="true" />
+      <created>1723465652756</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1723465652757</updated>
+    </task>
+    <task id="LOCAL-00047" summary="check bus proximity">
+      <option name="closed" value="true" />
+      <created>1723640596626</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1723640596629</updated>
+    </task>
+    <task id="LOCAL-00048" summary="check bus proximity">
+      <option name="closed" value="true" />
+      <created>1723785393335</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1723785393335</updated>
+    </task>
+    <task id="LOCAL-00049" summary="[+] download feature via download file">
+      <option name="closed" value="true" />
+      <created>1726836282066</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1726836282067</updated>
+    </task>
+    <task id="LOCAL-00050" summary="[+] migrating changes">
+      <option name="closed" value="true" />
+      <created>1726912125749</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1726912125750</updated>
+    </task>
+    <task id="LOCAL-00051" summary="remove audio angle header for production">
+      <option name="closed" value="true" />
+      <created>1732792913063</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1732792913074</updated>
+    </task>
+    <task id="LOCAL-00052" summary="comment debugPrint">
+      <option name="closed" value="true" />
+      <created>1732797239991</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1732797239995</updated>
+    </task>
+    <task id="LOCAL-00053" summary="change version code">
+      <option name="closed" value="true" />
+      <created>1732797807898</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1732797807898</updated>
+    </task>
+    <task id="LOCAL-00054" summary="offer bug, audio tour code">
+      <option name="closed" value="true" />
+      <created>1732870923517</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1732870923517</updated>
+    </task>
+    <task id="LOCAL-00055" summary="offer bug, audio tour code">
+      <option name="closed" value="true" />
+      <created>1732878929028</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1732878929028</updated>
+    </task>
+    <task id="LOCAL-00056" summary="version code">
+      <option name="closed" value="true" />
+      <created>1732878955192</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1732878955192</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="set state of audio player" />
+    <MESSAGE value="storage permission for ios" />
+    <MESSAGE value="proxy provider for audio service" />
+    <MESSAGE value="increase button height- play audio screen , change app ar text color - map" />
+    <MESSAGE value="audio api language parameter change" />
+    <MESSAGE value="ios - download file path updated" />
+    <MESSAGE value="app bar icon height change- image view screen" />
+    <MESSAGE value="language list ui change" />
+    <MESSAGE value="language list ui change, data in custom img api" />
+    <MESSAGE value="bus title bug solve" />
+    <MESSAGE value="check proximity for audio" />
+    <MESSAGE value="check proximity for audio, autoplay audio, user cannot manually start audio, location access in home screen , bus list api integration, check vehicle proximity" />
+    <MESSAGE value="zoom camera when marke selected, marker color bug" />
+    <MESSAGE value="loader in main screen for audio" />
+    <MESSAGE value="check proximity and audio autoplay" />
+    <MESSAGE value="check bus proximity" />
+    <MESSAGE value="minor ui bug fix, stop audio in main screen, device location enabled" />
+    <MESSAGE value="[+] change in response" />
+    <MESSAGE value="[+] download feature via download file" />
+    <MESSAGE value="[+] migrating changes" />
+    <MESSAGE value="remove audio angle header for production" />
+    <MESSAGE value="comment debugPrint" />
+    <MESSAGE value="change version code" />
+    <MESSAGE value="offer bug, audio tour code" />
+    <MESSAGE value="version code" />
+    <option name="LAST_COMMIT_MESSAGE" value="version code" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/screen/overview_screen.dart</url>
+          <line>218</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
