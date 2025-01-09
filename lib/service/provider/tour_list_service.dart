@@ -11,8 +11,8 @@ import '../shared_pred_service.dart';
 class TourListService with ChangeNotifier {
   bool isLoading = false;
   bool isError = false;
-  String errorMessage="";
-  List<TourData>  tourData =[];
+  String errorMessage = "";
+  List<TourData> tourData = [];
 
   Future<void> getTourData() async {
     try {
@@ -20,16 +20,21 @@ class TourListService with ChangeNotifier {
       isError = false;
       errorMessage = "";
       notifyListeners();
-      var response = await HttpService.httpGetWithoutToken(ConstantStrings.getTourList);
+      var response =
+          await HttpService.httpGetWithoutToken(ConstantStrings.getTourList);
       debugPrint("RES ${response.statusCode}");
       if (response.statusCode == 200) {
-
         var res = jsonDecode(response.body);
         if (res['success']) {
           var tempData = AudioTourListResponse.fromJson(res);
+
           debugPrint("RES ${tempData.data}");
-          tourData=tempData.data ?? [];
-          tourData = tourData.where((element) => element.status=="active",).toList();
+          tourData = tempData.data ?? [];
+          tourData = tourData
+              .where(
+                (element) => element.status == "active",
+              )
+              .toList();
           tourData.sort((a, b) {
             if (a.priority == null && b.priority == null) {
               return 0;
@@ -40,6 +45,16 @@ class TourListService with ChangeNotifier {
             }
             return a.priority!.compareTo(b.priority!);
           });
+          final Map<String, dynamic> tourMap =
+              jsonDecode(await SharedPrefService().getAudioTourCode() ?? "{}");
+          debugPrint("CODE ===> $tourMap");
+          final Set<String> tourIds =
+              tourData.map((tour) => (tour.id ?? "").toString()).toSet();
+          tourMap.removeWhere((key, value) => !tourIds.contains(key));
+          for (var id in tourIds) {
+            tourMap.putIfAbsent(id.toString(), () => '');
+          }
+          await SharedPrefService().setAudioTourCode(jsonEncode(tourMap));
           isError = false;
           errorMessage = "";
         } else {
@@ -53,14 +68,14 @@ class TourListService with ChangeNotifier {
         isError = true;
         errorMessage = "Something went wrong!";
       }
-    } catch (e,st) {
+    } catch (e, st) {
       errorMessage = e.toString();
       isError = true;
-      debugPrintStack(label: "Catch sample audio data $errorMessage", stackTrace: st);
+      debugPrintStack(
+          label: "Catch sample audio data $errorMessage", stackTrace: st);
     }
 
     isLoading = false;
     notifyListeners();
   }
-
 }

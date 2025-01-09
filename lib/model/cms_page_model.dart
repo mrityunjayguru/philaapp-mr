@@ -26,8 +26,8 @@ class CmsPageModel {
         success: json["success"] == null ? null : json["success"],
         status: json["status"] == null ? null : json["status"],
         //todo
-        message: json["message"] == null ? null : json["message"],
-        data: json["data"] == null ? null : CmsPageData.fromJson(json["data"]),
+        message: json["data"] == null ? null : json["data"],
+        data: json["message"] == null ? null : CmsPageData.fromJson(json["message"]),
       );
 
   Map<String, dynamic> toJson() => {

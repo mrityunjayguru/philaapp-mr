@@ -112,9 +112,9 @@ void main() async {
   runApp(const MyApp());
   FirebaseMessaging.onMessage.listen((RemoteMessage event) {
     showSimpleNotification(
-      Text(event.notification!.title.toString()),
+      Text((event.notification?.title ?? "").toString()),
       // leading: NotificationBadge(totalNotifications: _totalNotifications),
-      subtitle: Text(event.notification!.body.toString()),
+      subtitle: Text((event.notification?.body ?? "").toString()),
       background: ThemeClass.blackColor,
       duration: Duration(seconds: 3),
     );

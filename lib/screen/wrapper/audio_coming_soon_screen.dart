@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:city_sightseeing/enums.dart';
@@ -20,7 +21,10 @@ class AudioComingSoonScreen extends StatefulWidget {
   final String? pageId;
   final List<Code>? code;
   final bool codeDependency;
-  const AudioComingSoonScreen({Key? key, this.pageId, this.code, required this.codeDependency}) : super(key: key);
+
+  const AudioComingSoonScreen(
+      {Key? key, this.pageId, this.code, required this.codeDependency})
+      : super(key: key);
 
   @override
   State<AudioComingSoonScreen> createState() => _AudioComingSoonScreenState();
@@ -32,27 +36,39 @@ class _AudioComingSoonScreenState extends State<AudioComingSoonScreen> {
   final searchOnChange = new BehaviorSubject<String>();
 
   ValueNotifier<bool> isLoading = ValueNotifier(false);
+  ValueNotifier<bool> showWrongMessage = ValueNotifier(false);
 
   @override
   void initState() {
-
-    if(!widget.codeDependency){
+    if (!widget.codeDependency) {
       whenWriteCodeEnter();
-    }
-    else{
-      searchOnChange
-          .debounceTime(Duration(milliseconds: 500))
-          .listen(listenQueryString);
+    } else {
+      getPreviousCode();
     }
     super.initState();
   }
 
-  void listenQueryString(String queryString) {
-    if (widget.code?.map((e) => e.ticketNumber,).toList().contains(queryString) ?? true) {
+  void listenQueryString() async {
+    if (widget.code
+            ?.map(
+              (e) => e.ticketNumber,
+            )
+            .toList()
+            .contains(_textController.text.trim()) ??
+        true) {
       whenWriteCodeEnter();
+      var ticketMap = Map<String, String>.from(
+          jsonDecode(await SharedPrefService().getAudioTourCode() ?? "{}"));
+
+      String pageId = widget.pageId ?? "";
+      String enteredCode = _textController.text.trim();
+      ticketMap[pageId] = enteredCode;
+
+      await SharedPrefService().setAudioTourCode(jsonEncode(ticketMap));
       FocusScope.of(context).unfocus();
+      showWrongMessage.value = false;
     } else {
-      // Utils.showMessage("message", context);
+      showWrongMessage.value = true;
     }
   }
 
@@ -165,9 +181,9 @@ class _AudioComingSoonScreenState extends State<AudioComingSoonScreen> {
         .releasePlayer("", context);
   }
 
-  void _search(String queryString) {
-    searchOnChange.add(queryString);
-  }
+  // void _search(String queryString) {
+  //   searchOnChange.add(queryString);
+  // }
 
   @override
   void dispose() {
@@ -180,79 +196,100 @@ class _AudioComingSoonScreenState extends State<AudioComingSoonScreen> {
       valueListenable: isLoading,
       builder: (context, value, child) => Stack(
         children: [
-          if(widget.codeDependency)Scaffold(
-            appBar: AppBar(
-              backgroundColor: ThemeClass.redColor,
-              leading: IconButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                icon: Icon(
-                  Icons.arrow_back_ios_new,
-                  color: ThemeClass.whiteColor,
+          if (widget.codeDependency)
+            Scaffold(
+              appBar: AppBar(
+                backgroundColor: ThemeClass.redColor,
+                leading: IconButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  icon: Icon(
+                    Icons.arrow_back_ios_new,
+                    color: ThemeClass.whiteColor,
+                  ),
+                ),
+                title: Text(
+                  'Audio',
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
                 ),
               ),
-              title: Text(
-                'Audio',
-                style: TextStyle(
-                  color: Colors.white,
+              body: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    // Spacer(),
+                    Text(
+                      "Enter Code",
+                      style: TextStyle(
+                        color: ThemeClass.redColor,
+                        fontFamily: 'Lato',
+                        fontSize: 24,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    // Spacer(),
+                    SizedBox(
+                      height: 25,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                      child: TextFormField(
+                        controller: _textController,
+                        // onChanged: _search,
+                        decoration: InputDecoration(
+                          contentPadding: EdgeInsets.only(
+                            left: 20,
+                            right: 20,
+                            top: 10,
+                            bottom: 10,
+                          ),
+                          fillColor: Colors.white,
+                          border: const OutlineInputBorder(
+                            borderSide: BorderSide(),
+                          ),
+                          focusedBorder: const OutlineInputBorder(
+                            borderSide: BorderSide(),
+                          ),
+                        ),
+                        scrollPadding: EdgeInsets.zero,
+                        keyboardType: TextInputType.emailAddress,
+                        cursorColor: ThemeClass.redColor,
+                        style: new TextStyle(
+                          fontSize: 20,
+                          letterSpacing: 2,
+                          color: ThemeClass.greyColor,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 25,
+                    ),
+                    ValueListenableBuilder(
+                        valueListenable: showWrongMessage,
+                        builder: (context, val, _) => showWrongMessage.value
+                            ? Column(
+                                children: [
+                                  Text(
+                                    "Wrong Code!",
+                                    style: TextStyle(
+                                        color: ThemeClass.redColor,
+                                        fontSize: 16),
+                                  ),
+                                  SizedBox(
+                                    height: 25,
+                                  ),
+                                ],
+                              )
+                            : SizedBox()),
+                    _buildButton()
+                  ],
                 ),
               ),
             ),
-            body: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  // Spacer(),
-                  Text(
-                    "Enter Code",
-                    style: TextStyle(
-                      color: ThemeClass.redColor,
-                      fontFamily: 'Lato',
-                      fontSize: 24,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  // Spacer(),
-                  SizedBox(
-                    height: 25,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                    child: TextFormField(
-                      controller: _textController,
-                      onChanged: _search,
-                      decoration: InputDecoration(
-                        contentPadding: EdgeInsets.only(
-                          left: 20,
-                          right: 20,
-                          top: 10,
-                          bottom: 10,
-                        ),
-                        fillColor: Colors.white,
-                        border: const OutlineInputBorder(
-                          borderSide: BorderSide(),
-                        ),
-                        focusedBorder: const OutlineInputBorder(
-                          borderSide: BorderSide(),
-                        ),
-                      ),
-                      scrollPadding: EdgeInsets.zero,
-                      keyboardType: TextInputType.emailAddress,
-                      cursorColor: ThemeClass.redColor,
-                      style: new TextStyle(
-                        fontSize: 20,
-                        letterSpacing: 2,
-                        color: ThemeClass.greyColor,
-                      ),
-                    ),
-                  ),
-                  // Spacer(),
-                ],
-              ),
-            ),
-          ),
           isLoading.value
               ? Positioned.fill(
                   child: Container(
@@ -266,5 +303,42 @@ class _AudioComingSoonScreenState extends State<AudioComingSoonScreen> {
         ],
       ),
     );
+  }
+
+  MaterialButton _buildButton() {
+    return MaterialButton(
+      minWidth: MediaQuery.of(context).size.width * 0.75,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 50,
+          vertical: 15,
+        ),
+        child: Text(
+          "ENTER",
+          style: TextStyle(
+            // fontFamily: "Rubik",
+            color: Colors.white,
+            fontSize: 16,
+          ),
+        ),
+      ),
+      color: ThemeClass.redColor,
+      onPressed: () {
+        listenQueryString();
+      },
+    );
+  }
+
+  Future getPreviousCode() async {
+    try {
+      var ticket = await SharedPrefService().getAudioTourCode();
+
+      setState(() {
+        if (ticket.toString() != "null") {
+          _textController.text =
+              json.decode(ticket ?? "")[widget.pageId] ?? "{}";
+        }
+      });
+    } catch (e) {}
   }
 }

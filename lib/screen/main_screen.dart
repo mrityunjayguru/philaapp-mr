@@ -267,7 +267,7 @@ class _MainScreenState extends State<MainScreen> with RouteAware {
         onPressed: (context1) {
           var data = Provider.of<InitialDataService>(context, listen: false)
               .globalCmsData;
-
+          debugPrint("DAta======> ${data?.ticketUrl}");
           if (data != null) {
             _launchURL(data.ticketUrl.toString());
           }

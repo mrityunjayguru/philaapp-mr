@@ -97,7 +97,7 @@ class InitialDataService with ChangeNotifier {
     try {
       var url = ConstantStrings.cmsData;
       var response = await HttpService.httpGetWithoutToken(url);
-      // debugPrint("CMS DATA ${response.statusCode}");
+      debugPrint("CMS DATA ${response.body}");
       if (response.statusCode == 200) {
         CmsPageModel sliderAndStopsData =
             CmsPageModel.fromJson(jsonDecode(response.body));

@@ -82,22 +82,22 @@ class _NotificationScreenState extends State<NotificationScreen> {
                             } else {
                               return Container(
                                 // height: height,
-                                child: _buildDataNotFound1("Data Not Found!"),
+                                child: _buildDataNotFound1("No Notifications Found!"),
                               );
                             }
                           } else {
                             return Container(
                                 // height: height,
-                                child: _buildDataNotFound1("Data Not Found!"));
+                                child: _buildDataNotFound1("No Notifications Found!"));
                           }
                         } else {
-                          return _buildDataNotFound1("Data Not Found!");
+                          return _buildDataNotFound1("No Notifications Found!");
                         }
                       } else if (snapshot.hasError) {
                         // return Center(child: Text(snapshot.error.toString()));
                         return _buildDataNotFound1(snapshot.error.toString());
                       } else {
-                        return _buildDataNotFound1("Data Not Found!");
+                        return _buildDataNotFound1("No Notifications Found!");
                       }
                     } else {
                       return Center(

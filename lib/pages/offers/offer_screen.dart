@@ -97,6 +97,7 @@ class _OfferScreenState extends State<OfferScreen> {
 
       if (response.statusCode == 200 || response.statusCode == 201) {
         final body = json.decode(response.body);
+        debugPrint("response====> ${response.body}");
         OfferListModel places = OfferListModel.fromJson(body);
 
         return places;
@@ -186,7 +187,7 @@ class _OfferScreenState extends State<OfferScreen> {
                               return Container(
                                 // height: height,
                                 child: _buildDataNotFound1(
-                                    "Data Not Found!", snapshot.data!.data),
+                                    "No Offers Found!", snapshot.data!.data),
                               );
                             }
                           } else {

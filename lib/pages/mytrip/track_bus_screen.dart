@@ -78,7 +78,7 @@ class _TrackBusScreenState extends State<TrackBusScreen> {
       print(queryParameters);
       var response =
           await HttpService.httpPostWithoutToken("track-bus", queryParameters);
-
+      debugPrint("bus track response ${response.body}");
       if (response.statusCode == 200 || response.statusCode == 201) {
         final body = json.decode(response.body);
 
@@ -86,7 +86,7 @@ class _TrackBusScreenState extends State<TrackBusScreen> {
             body['status'].toString() == "200") {
 
           BusTrackModel _busLocation = BusTrackModel.fromJson(body);
-          debugPrint("bus track response ${body}");
+
           if (_busLocation.status == "200" || _busLocation.status == 200) {
             if (_busLocation.data != null) {
               setState(() {
@@ -95,15 +95,15 @@ class _TrackBusScreenState extends State<TrackBusScreen> {
               return true;
             } else {
               showSnackbarMessageGlobal(
-                  _busLocation.message.toString(), context);
+                  _busLocation.data.toString(), context);
               return false;
             }
           } else {
-            showSnackbarMessageGlobal(_busLocation.message.toString(), context);
+            showSnackbarMessageGlobal(_busLocation.data.toString(), context);
             return false;
           }
         } else {
-          showSnackbarMessageGlobal(body['message'].toString(), context);
+          showSnackbarMessageGlobal(body['data'].toString(), context);
           return false;
         }
       } else {

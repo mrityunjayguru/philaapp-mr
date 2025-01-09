@@ -65,6 +65,24 @@ class SharedPrefService {
     return temp;
   }
 
+  Future<void> setAudioTourCode(data) async {
+    preferences = await SharedPreferences.getInstance();
+
+    preferences!.setString('audio_tour_code', data);
+  }
+
+  Future<void> removeAudioTourCode() async {
+    preferences = await SharedPreferences.getInstance();
+
+    preferences!.remove('audio_tour_code');
+  }
+
+  Future<String?> getAudioTourCode() async {
+    preferences = await SharedPreferences.getInstance();
+    String? temp = preferences!.getString("audio_tour_code");
+    return temp;
+  }
+
   Future<void> setLanguage(data) async {
     preferences = await SharedPreferences.getInstance();
     preferences!.setString("language", data);
